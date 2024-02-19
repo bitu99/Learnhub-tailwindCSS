@@ -1,0 +1,9 @@
+#section1{
+    width: 100vw;
+}
+
+@media (width: 768px) {
+    #section1{
+        flex-direction: column-reverse;
+    }
+}

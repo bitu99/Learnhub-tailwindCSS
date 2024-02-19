@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex w-screen justify-between md:h-fit">
+        <div class="text-4xl md:text-5xl p-5 md:p-7" id="nav-part1">
+            Pen<span class="text-purple-600">Shop</span>
+        </div>
+        <div class="hidden md:flex justify-between w-1/2 h-20 p-4 text-3xl items-center" id="nav-part2">
+            <div>Shop by brand</div>
+            <div>Craft Material</div>
+            <div>Office stuff</div>
+            <div>&#x1f6d2</div>
+        </div>
+        <div class="hidden flex-col w-screen bg-purple-300 h-screen pt-40 gap-4 p-4 text-xl items-start" id="nav-part3">
+            <div>Shop by brand</div>
+            <div>Craft Material</div>
+            <div>Office stuff</div>
+            <div>&#x1f6d2</div>
+        </div>
+        <div class="text-4xl z-20 p-5 md:hidden" id="hamburger">&#9776</div>
+        <div class="absolute z-70 text-4xl p-5 right-4 hidden md:hidden" id="cancel">&#10005</div>
+    </nav>
+
+    <section class="w-full h-screen flex flex-col-reverse md:flex-row justify-start pt-24 md:pt-px" id="section1">
+        <div class="w-full md:w-1/2 h-full  md:flex justify-center md:flex-col p-6 md:pl-36" id="box1">
+            <h1 class="text-4xl md:text-6xl">One stop solution for all your stationary material needs.</h1>
+            <div>
+                <p class="hidden md:block text-xl mt-4">We sell the best quality stationary products suited according to your needs and that too at the best price you can find anywhere, To know more browse through our products.</p>
+            </div>
+            <button class="bg-purple-600 text-white text-lg p-3 px-4 mt-4 md:text-3xl md:p-4 md:px-7 rounded-lg w-fit">Browse products</button>
+        </div>
+        <div class="flex justify-center items-center md:w-1/2 md:pr-8" id="box2">
+            <div id="box2-box1">
+                <img class="h-1/6 w-1/2 md:h-2/3 object-cover shadow-2xl rounded-xl ml-24 md:ml-40 md:mb-16" src="pencil-case-cover-purple.webp" alt="">
+                <img class="h-1/6 w-1/2 md:h-2/3 object-cover shadow-2xl rounded-xl" src="scissor-img.jpeg" alt="">
+            </div>
+            <div id="box2-box2">
+                <img class="h-1/5 md:h-1/5 object-cover shadow-2xl rounded-xl md:mr-32" src="notebook.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-screen h-screen" id="section2">
+        <h1 class="text-center text-xl font-medium">Products</h1>
+        <div class="flex flex-wrap gap-2 w-full justify-evenly items-center h-full">
+            <div class="w-1/3 h-fit">
+                <img class="w-full h-auto object-cover rounded-full shadow-2xl" src="img-penshop/ball pen.webp" alt="">
+                <h1 class="text-center mt-2 text-base">Pens</h1>
+            </div>
+            <div class="w-1/3 h-fit">
+                <img class="w-full h-auto object-cover rounded-full shadow-2xl" src="img-penshop/colour-wheel-notepadnotebook.webp" alt="">
+                <h1 class="text-center mt-2 text-base">Notebook</h1>
+            </div>
+            <div class="w-1/3 h-fit">
+                <img class="w-full h-auto object-cover rounded-full shadow-2xl" src="img-penshop/nataraj-pencils.avif" alt="">
+                <h1 class="text-center mt-2 text-base">Pencil</h1>
+            </div>
+            <div class="w-1/3 h-fit">
+                <img class="w-full h-auto object-cover rounded-full shadow-2xl" src="img-penshop/pencil-case-cover-purple.webp" alt="">
+                <h1 class="text-center mt-2 text-base">Cases</h1>
+            </div>
+            <div class="w-1/3 h-fit">
+                <img class="w-full h-auto object-cover rounded-full shadow-2xl" src="img-penshop/staedtler-graphite-pencils.avif" alt="">
+                <h1 class="text-center mt-2 text-base">Color oencils</h1>
+            </div>
+            <div class="w-1/3 h-1/4" id="product6">
+                <a class="cursor-pointer" href=""><h1 class="text-2xl font-medium text-center">see more products</h1></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
