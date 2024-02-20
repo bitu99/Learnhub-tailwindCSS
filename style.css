@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #section1{
     width: 100vw;
 }
@@ -7,3 +8,15 @@
         flex-direction: column-reverse;
     }
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+body{
+    font-family: poppins;
+}
+/* 
+
+#register-btn{
+    background-color: rgb(37, 99, 235);
+} */
+>>>>>>> 81f0fff (first commit)
