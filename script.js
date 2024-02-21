@@ -52,6 +52,7 @@ let cancel_btn = document.querySelector("#cancel");
 let nav_bar = document.querySelector("#nav-part2");
 let home_page = document.querySelector("#section1");
 
+
 let isMenuOpen = false;
 
 menu_btn.addEventListener("click", toggle);
