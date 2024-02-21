@@ -3,6 +3,10 @@
 body{
     font-family: poppins;
 }
+
+body::-webkit-scrollbar{
+    display: none;
+}
 /* 
 
 #register-btn{
