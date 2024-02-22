@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="absolute z-70 right-8 top-5 text-4xl font-bold cursor-pointer" id="account-cancel-btn2">&#10005</div>
+    <div class="card hidden md:flex">
+        <form action="">
+            <input class="" type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="submit" value="Register" class="submit-btn">
+            <a href="sign-in.html"><input class="w-full" type="button" value="Already have an account? Login" class="login-btn"></a>
+        </form>
+    </div>
+
+    <div class="md:hidden w-screen h-screen flex justify-center items-center text-lg">
+        <form class="w-4/5 h-2/3 bg-blue-100 flex justify-center items-center text-lg rounded-xl" action="">
+            <input class="text-lg h-10" type="text" placeholder="Name">
+            <input class="text-lg h-10" type="email" placeholder="Email">
+            <input class="text-lg h-10" type="password" name="password" id="password" placeholder="Password">
+            <input class="text-lg h-10 pb-0 mt-10 bg-blue-700 text-white " type="submit" value="Register" class="submit-btn">
+            <a href="sign-in.html"><input class="text-lg h-fit pl-0 ml-0 text-wrap underline-offset-4 w-full" type="button" value="Already have an account? Login" class="login-btn"></a>
+        </form>
+    </div>
+
+    
+</body>
+</html>
