@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +18,8 @@
                 <ul class="flex-col pt-28 px-6 m-0 items-center justify-center h-screen">
                     <li class="py-4 hover:opacity-80  cursor-pointer">For students</li>
                     <li class="py-4 hover:opacity-80  cursor-pointer">For educators</li>
-                    <li class="py-4 hover:opacity-80  cursor-pointer">About us</li>
-                    <li class="py-4 hover:opacity-80  cursor-pointer"><button class="bg-blue-500 text-white text-xl p-3 px-5 rounded hover:opacity-70"><a href="components/register.html">Register</a></button></li>
+                    <a href="component/about.html"><div class="hover:opacity-65">About us</div></a>
+                    <li class="py-4 hover:opacity-80  cursor-pointer"><button class="bg-blue-500 text-white text-xl p-3 px-5 rounded hover:opacity-70 hover:scale-110 ease-linear duration-200"><a href="components/register.html">Register</a></button></li>
                 </ul>
             </div>
             <div class="absolute z-20 right-4 md:hidden" id="hamburger">&#9776</div>
@@ -30,8 +28,8 @@
         <div class="hidden text-lg md:flex w-1/2 justify-between h-full" id="nav-part3">
             <div class="hover:opacity-65">For students</div>
             <div class="hover:opacity-65">For educators</div>
-            <div class="hover:opacity-65">About us</div>
-            <button class="text-lg text-white bg-blue-400 p-3 px-6 pb-10 rounded hover:opacity-70" id="register-btn"><a href="components/register.html">Register</a></button>
+            <a href="component/about.html"><div class="hover:opacity-65">About us</div></a>
+            <button class="text-lg text-white bg-blue-400 p-3 px-6 pb-10 rounded hover:opacity-70 hover:scale-110 ease-linear duration-300" id="register-btn"><a href="components/register.html">Register</a></button>
         </div>
     </nav>
     <!-- bg-slate-500 text-black text-2xl rounded -->
@@ -42,7 +40,7 @@
         <div class="pt-9 h-1/2 w-full flex-col justify-center items-start px-8 gap-5 md:w-1/2 md:h-full md:flex md:justify-center md:items-start lg:text-left md:p-10 md:pl-52" id="box2">
             <h1 class="text-3xl font-medium md:p-0 md:m-0 md:text-6xl">Best learning management tool.</h1>
             <p class="text-base text-left font-light mt-2 md:text-lg md:font-normal md:pl-0">LearnHub helps educators create engaging learning experiences which they can personalize, manage, and measure. It also empowers the institutions with simple, safer, collaborative tools.</p>
-            <button class="bg-blue-500 text-white text-lg p-2 px-7 rounded hover:opacity-25 text-center md:text-left mt-4 md:text-lg">Sign in to LearnHub</button>
+            <button class="bg-blue-500 text-white text-lg p-2 px-7 rounded hover:opacity-75 text-center md:text-left mt-4 md:text-lg hover:scale-110 ease-linear duration-200">Sign in to LearnHub</button>
         </div>
     </section>
 
@@ -95,21 +93,32 @@
 
     </section>
 
-    <footer class="w-full h-80 p-5 bg-neutral-900 text-white md:text-lg" id="footer">
-        <div class="flex justify-between h-full w-full flex-wrap md:px-10 md:pt-4">
-            <ul class="flex flex-col gap-2 items-start cursor-pointer">
-                <li class=" hover:opacity-25 cursor-pointer">About us</li>
-                <li class=" hover:opacity-25 cursor-pointer">Privacy policy</li>
+    <section class="w-screen h-screen m-0" id="contact-us">
+        <h1 class="text-3xl md:text-5xl md:px-10 text-center">Contact Us</h1>
+        <div class="h-5/6 w-full flex flex-col justify-center items-center text-2xl">
+            <form class="md:h-4/5 h-2/3 md:w-2/3 w-4/5 flex flex-col justify-center p-18 items-center gap-5" action="">
+                <input class="w-full md:w-4/5 md:2/3 md:p-6 p-2 text-lg md:text-xl bg-slate-100 rounded shadow-md" type="text" placeholder="Your name">
+                <input class="w-full md:w-4/5 md:2/3 md:p-6 p-2 text-lg md:text-xl bg-slate-100 rounded shadow-md" type="email" name="" id="" placeholder="Your email">
+                <textarea class="w-full md:w-4/5 md:2/3 md:p-6 p-2 text-lg md:text-xl h-full md:h-full bg-slate-100 rounded shadow-md resize-none" name="" id="" resize="none" placeholder="message.."></textarea>
+            </form>
+        </div>
+    </section>
+
+    <footer class="w-full h-fit md:h-60 p-5 bg-neutral-900 text-white md:text-lg" id="footer">
+        <div class="flex flex-col gap-6 md:gap-1 md:flex-row justify-between h-fit w-full md:px-10 md:pt-4">
+            <ul class="flex flex-col gap-2 md:gap-4 items-start cursor-pointer">
+                <a href="/component/about.html"><li class="hover:opacity-65 cursor-pointer">About us</li></a>
+                <a href="/component/privacy.html"><li class=" hover:opacity-25 cursor-pointer">Privacy policy</li></a>
                 <li class=" hover:opacity-25 cursor-pointer">Terms of Use</li>
             </ul>
 
-            <ul class="flex flex-col gap-2 items-start">
+            <ul class="flex flex-col gap-2 md:gap-4 items-start">
                     <li class=" hover:opacity-25 cursor-pointer">Instagram</li>
                     <li class=" hover:opacity-25 cursor-pointer">Linkedin</li>
                     <li class=" hover:opacity-25 cursor-pointer">learnhub@gmail.com</li>
             </ul>
 
-            <ul class="flex flex-col gap-2 items-start">
+            <ul class="flex flex-col gap-2 md:gap-4 items-start">
                     <li class=" hover:opacity-25 cursor-pointer">FAQ's</li>
                     <li class=" hover:opacity-25 cursor-pointer">Linkedin</li>
                     <li class=" hover:opacity-25 cursor-pointer">learnhub@gmail.com</li>
@@ -120,126 +129,3 @@
     <script src="script.js"></script>
 </body>
 </html>
->>>>>>> 42ac976 (some chng)
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnHub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body id="body">
-    <nav class="bg-white hover:cursor-pointer text-3xl md:text-5xl md:p-12 p-4 flex justify-between w-screen h-20 mb-3">
-        <div id="nav-part1">
-            <h1>Learn<span class="text-blue-500">Hub</span></h1>
-        </div>
-        <div class="flex h-screen w-screen md:hidden">
-            <div class="absolute -z-10 md:z-0 md:fixed right-0 top-0 text-lg m-0 h-full hidden"  id="nav-part2">
-                <ul class="flex-col pt-28 px-6 m-0 items-center justify-center h-screen">
-                    <li class="py-4 hover:opacity-80  cursor-pointer">For students</li>
-                    <li class="py-4 hover:opacity-80  cursor-pointer">For educators</li>
-                    <li class="py-4 hover:opacity-80  cursor-pointer">About us</li>
-                    <li class="py-4 hover:opacity-80  cursor-pointer"><button class="bg-blue-500 text-white text-xl p-3 px-5 rounded hover:opacity-70"><a href="components/register.html">Register</a></button></li>
-                </ul>
-            </div>
-            <div class="absolute z-20 right-4 md:hidden" id="hamburger">&#9776</div>
-            <div class="absolute z-70 right-4 hidden md:hidden" id="cancel">&#10005</div>
-        </div>
-        <div class="hidden text-lg md:flex w-1/2 justify-between h-full" id="nav-part3">
-            <div class="hover:opacity-65">For students</div>
-            <div class="hover:opacity-65">For educators</div>
-            <div class="hover:opacity-65">About us</div>
-            <button class="text-lg text-white bg-blue-400 p-3 px-6 pb-10 rounded hover:opacity-70" id="register-btn"><a href="components/register.html">Register</a></button>
-        </div>
-    </nav>
-    <!-- bg-slate-500 text-black text-2xl rounded -->
-    <section class="w-screen h-screen flex-col md:flex md:flex-row-reverse" id="section1">
-        <div class="w-full h-1/3 object-cover md:w-1/2 md:h-full md:flex  md:justify-center md:items-center" id="box1">
-            <img class="md:w-4/5" src="images/hero-img.jpg" alt="" loading="lazy">
-        </div>
-        <div class="pt-9 h-1/2 w-full flex-col justify-center items-start px-8 gap-5 md:w-1/2 md:h-full md:flex md:justify-center md:items-start lg:text-left md:p-10 md:pl-52" id="box2">
-            <h1 class="text-3xl font-medium md:p-0 md:m-0 md:text-6xl">Best learning management tool.</h1>
-            <p class="text-base text-left font-light mt-2 md:text-lg md:font-normal md:pl-0">LearnHub helps educators create engaging learning experiences which they can personalize, manage, and measure. It also empowers the institutions with simple, safer, collaborative tools.</p>
-            <button class="bg-blue-500 text-white text-lg p-2 px-7 rounded hover:opacity-25 text-center md:text-left mt-4 md:text-lg">Sign in to LearnHub</button>
-        </div>
-    </section>
-
-    <!----------- section2 ---------- -->
-    <section class=" relative h-screen w-screen" id="section2">
-        <!-- mobile-code  -->
-        <div class="md:hidden w-full flex-col pt-0 mt-0" id="sec2-mobile"></div>
-        <img class="md:hidden opacity-50 h-full md:w-full object-cover" src="images/people-teaching.jpg" alt="" loading="lazy">
-            <div class="md:hidden absolute bottom-2 text-gray-800" id="sec2-text">
-                <!-- <h1 class="text-3xl font-medium md:p-0 md:m-0 md:text-6xl">Designed specially for <span class="">educators.</span></h1> -->
-                <p class="md:hidden pt-56 pl-6 w-4/5 text-2xl font-extralight mt-2 md:text-3xl md:font-normal md:pl-0">Designed with feedback from educational community, always building new features and functionalities that lets educators focus on teaching and student focus on learning.</p>
-            </div>
-        </div>
-        <!-- desktop code  -->
-        <div class="hidden md:flex w-screen h-screen" id="sec2-desktop">
-            <div class="h-full w-1/2 flex justify-center items-center" id="sec2-box1">
-                <img class="object-cover w-3/4 rounded-xl ml-40 shadow-2xl" src="images/people-teaching.jpg" alt="" loading="lazy">
-            </div>
-            <div class="h-full w-1/2 flex justify-center items-center px-10 pr-48" id="sec2-box2">
-                <div>
-                    <h1 class="text-6xl">Designed specially for <span class="">educators.</span></h1>
-                    <p class="text-lg mt-6">Designed with feedback from educational community, always building new features and functionalities that lets educators focus on teaching and student focus on learning.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- -------section3--------- -->
-    <section class="h-screen w-screen" id="section3">
-        <div class="md:hidden w-full h-full flex-col justify-center items-center" id="sec3-mobile">
-            <div class="h-1/2 w-full flex flex-col justify-center px-9" id="sec3-mobile-box1">
-                <h1 class="text-xl font-medium">Enrich and personalize learning.</h1>
-                <p class="text-sm font-medium mt-4">LearnHub helps educators create engaging learning experiences which they can personalize, manage, and measure. It also empowers the institutions with simple, safer, collaborative tools.</p>
-            </div>
-            <div class="w-full h-1/2" id="sec3-mobile-box2">
-                <img class="w-full object-cover" src="images/studying-boy.jpg" alt="" loading="lazy">
-            </div>
-        </div>
-
-        <!-- desktop-code  -->
-        <div class="hidden h-full w-full md:flex" id="sec3-desktop">
-            <div class="h-full w-1/2 flex flex-col justify-center items-center px-10 pl-48" id="sec3-desktop-box1">
-                <h1 class="text-6xl text-left font-medium">Enrich and personalize learning.</h1>
-                <p class="text-lg font-medium mt-6">LearnHub helps educators create engaging learning experiences which they can personalize, manage, and measure. It also empowers the institutions with simple, safer, collaborative tools.</p>
-            </div>
-            <div class="h-full w-1/2 flex flex-col justify-center items-center" id="sec3-desktop-box2">
-                <img class="object-cover w-3/4 rounded-xl mr-40 shadow-2xl" src="images/studying-boy.jpg" alt="" loading="lazy">
-            </div>
-        </div>
-
-    </section>
-
-    <footer class="w-full h-80 p-5 bg-neutral-900 text-white md:text-lg" id="footer">
-        <div class="flex justify-between h-full w-full flex-wrap md:px-10 md:pt-4">
-            <ul class="flex flex-col gap-2 items-start cursor-pointer">
-                <li class=" hover:opacity-25 cursor-pointer">About us</li>
-                <li class=" hover:opacity-25 cursor-pointer">Privacy policy</li>
-                <li class=" hover:opacity-25 cursor-pointer">Terms of Use</li>
-            </ul>
-
-            <ul class="flex flex-col gap-2 items-start">
-                    <li class=" hover:opacity-25 cursor-pointer">Instagram</li>
-                    <li class=" hover:opacity-25 cursor-pointer">Linkedin</li>
-                    <li class=" hover:opacity-25 cursor-pointer">learnhub@gmail.com</li>
-            </ul>
-
-            <ul class="flex flex-col gap-2 items-start">
-                    <li class=" hover:opacity-25 cursor-pointer">FAQ's</li>
-                    <li class=" hover:opacity-25 cursor-pointer">Linkedin</li>
-                    <li class=" hover:opacity-25 cursor-pointer">learnhub@gmail.com</li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
->>>>>>> c7912250bf0a69565ab6229d477bedcb8d087e44
