@@ -7,6 +7,7 @@
     <title>LearnHub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body id="body">
     <nav class="bg-white hover:cursor-pointer text-3xl md:text-5xl md:p-12 p-4 flex justify-between w-screen h-20 mb-3">
@@ -104,25 +105,28 @@
         </div>
     </section>
 
-    <footer class="w-full h-fit md:h-60 p-5 bg-neutral-900 text-white md:text-lg" id="footer">
+    <footer class="relative w-full h-fit md:h-60 p-5 bg-neutral-900 text-white md:text-lg" id="footer">
         <div class="flex flex-col gap-6 md:gap-1 md:flex-row justify-between h-fit w-full md:px-10 md:pt-4">
             <ul class="flex flex-col gap-2 md:gap-4 items-start cursor-pointer">
-                <a href="/component/about.html"><li class="hover:opacity-65 cursor-pointer">About us</li></a>
-                <a href="/component/privacy.html"><li class=" hover:opacity-25 cursor-pointer">Privacy policy</li></a>
-                <li class=" hover:opacity-25 cursor-pointer">Terms of Use</li>
+                <a href="component/about.html"><li class="hover:opacity-65 cursor-pointer">About us</li></a>
+                <a href="component/privacy.html"><li class="hover:opacity-25 cursor-pointer">Privacy policy</li></a>
+                <a href="component/copyright.html"><li class="hover:opacity-25 cursor-pointer">Copyrights</li></a>
             </ul>
 
             <ul class="flex flex-col gap-2 md:gap-4 items-start">
-                    <li class=" hover:opacity-25 cursor-pointer">Instagram</li>
-                    <li class=" hover:opacity-25 cursor-pointer">Linkedin</li>
-                    <li class=" hover:opacity-25 cursor-pointer">learnhub@gmail.com</li>
-            </ul>
-
-            <ul class="flex flex-col gap-2 md:gap-4 items-start">
+                    <li class=" hover:opacity-25 cursor-pointer">Terms of Use</li>
                     <li class=" hover:opacity-25 cursor-pointer">FAQ's</li>
-                    <li class=" hover:opacity-25 cursor-pointer">Linkedin</li>
                     <li class=" hover:opacity-25 cursor-pointer">learnhub@gmail.com</li>
             </ul>
+
+            <ul class="flex flex-col gap-4 md:gap-6 items-start">
+                    <li class=" hover:opacity-25 cursor-pointer"><i class="fa-brands fa-x-twitter fa-xl"></i></li>
+                    <li class=" hover:opacity-25 cursor-pointer"><i class="fa-brands fa-linkedin-in fa-xl"></i></li>
+                    <li class=" hover:opacity-25 cursor-pointer"><i class="fa-brands fa-instagram fa-xl"></i></li>
+            </ul>
+        </div>
+        <div class="absolute right-2 bottom-2 w-fit bg-neutral-900 h-fit md:p-2 m-0 flex content-end text-white text-sm">
+            copyright<i class="fa-regular fa-copyright"></i> 2024-2025. All rights reserved
         </div>
     </footer>
 
